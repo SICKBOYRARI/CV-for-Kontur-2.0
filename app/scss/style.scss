@@ -1,0 +1,188 @@
+@import "vars";
+@import "libs";
+@import "fonts";
+
+.section__title{
+  font-size: 24px;
+  font-weight: 700;
+  padding-bottom: 76px;
+}
+
+//Header section
+
+body{
+  font-family: 'Libre Franklin', sans-serif;
+  box-sizing: border-box;
+  p,ul,li,h1,h2,h3,h4,h5{
+    padding: 0;
+    margin: 0;
+    font-weight: normal;
+  }
+}
+
+.container{
+  padding: 93px 165px 0 165px;
+}
+
+.header{
+  .header__bg{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+  }
+  .header__content{
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    font-size: 24px;
+    .header__title{
+      font-size: 64px;
+      padding-bottom: 26px;
+    }
+    .header__subtitle{
+      padding-bottom: 106px;
+    }
+    .header__link{
+      font-size: 18px;
+      color: #fff;
+    }
+    .header__nav{
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 145px;
+      .header__logo{
+        font-weight: 700;
+      }
+      .header__ul{
+        display: flex;
+        list-style: none;
+        .header__li{
+          padding-right: 59px;
+          a{
+            text-decoration: none;
+            color: #fff;
+          }
+          &:nth-child(5){
+            padding-right: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+//About section
+
+.about__content{
+  margin-bottom: 115px;
+}
+
+//Skills section
+
+.skills{
+  background: #FFFAF2;
+  .skills__content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 145px;
+    .skills__profile{
+      .profile__item{
+        display: flex;
+        justify-content: space-between;
+        font-size: 18px;
+        padding-bottom: 21px;
+        &:nth-child(1){
+          padding-bottom: 65px;
+        }
+        &:nth-child(2){
+          .progress__percent{
+            width: 100%;
+          }
+        }
+        &:nth-child(3){
+          .progress__percent{
+            width: 50%;
+          }
+        }
+        &:nth-child(4){
+          .progress__percent{
+            width: 40%;
+          }
+        }
+        &:nth-child(5){
+          .progress__percent{
+            width: 85%;
+          }
+        }
+        &:nth-child(6){
+          padding-bottom: 0;
+        }
+        .profile__title{
+          padding-right: 131px;
+          font-weight: 700;
+        }
+        .profile__progress{
+          height: 24px;
+          width: 446px;
+          background: #F5D6AB;
+          .progress__percent{
+            background: #C66C49;
+            height: 24px;
+          }
+        }
+      }
+    }
+  }
+}
+
+//Portfolio section
+
+.portfolio{
+  padding-bottom: 145px;
+  .portfolio__item{
+    .portfolio__subtitle{
+      font-size: 18px;
+      font-weight: 700;
+      padding-bottom: 48px;
+    }
+    .portfolio__content{
+      display: flex;
+      justify-content: space-between;
+      .portfolio__text{
+        width: 30%;
+      }
+    }
+  }
+}
+
+//Footer section
+
+.footer{
+  background: #FFFAF2;
+  padding-bottom: 189px;
+  .footer__nav{
+    display: flex;
+    justify-content: space-between;
+    .footer__ul{
+      .footer__li{
+        list-style: none;
+        padding-bottom: 14px;
+        a{
+          text-decoration: none;
+          color: #000;
+        }
+      }
+    }
+  }
+}
+
+
+
+@import "media";
