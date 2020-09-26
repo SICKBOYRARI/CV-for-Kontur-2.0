@@ -1,0 +1,99 @@
+@media (max-width: 1440px) {
+  .skills .skills__content .skills__profile .profile__item .profile__progress {
+    width: 300px;
+  }
+}
+
+@media (max-width: 1285px) {
+  .container{
+    padding-left: 75px;
+    padding-right: 75px;
+  }
+  .skills__content{
+    flex-direction: column;
+  }
+  .section__title{
+    text-align: center;
+  }
+  .skills__img{
+    padding-bottom: 75px;
+  }
+  .skills__profile{
+    width: 80%;
+  }
+  .tpl_hamburger{
+    display: block;
+  }
+  .js_menu{
+    display: none;
+  }
+  .header .header__content .header__nav .header__ul .header__li {
+    padding-right: 0;
+    padding-bottom: 50px;
+  }
+}
+
+@media (max-width: 850px) {
+  .container{
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 35px;
+  }
+  .about__content{
+    margin-bottom: 55px;
+  }
+  .skills .skills__content, .footer, .portfolio {
+    padding-bottom: 75px;
+  }
+  .skills__profile {
+    width: 100%;
+  }
+  .skills .skills__content .skills__profile .profile__item .profile__progress {
+    width: 200px;
+  }
+  .skills .skills__content .skills__profile .profile__item .profile__title {
+    padding-right: 0px;
+  }
+  .portfolio .portfolio__item .portfolio__content .portfolio__text {
+    width: 80%;
+    padding-bottom: 50px;
+  }
+  .portfolio .portfolio__item .portfolio__subtitle {
+    text-align: center;
+  }
+  .portfolio .portfolio__item .portfolio__content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .section__title{
+    padding-bottom: 35px;
+  }
+}
+
+@media (max-width: 500px) {
+  .skills .skills__content .skills__profile .profile__item {
+    font-size: 14px;
+  }
+  .skills .skills__content .skills__profile .profile__item .profile__title {
+    font-weight: 300;
+  }
+  .container{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .skills__img, .portfolio__img, .portfolio__img img {
+    width: 80%;
+    height: auto;
+    text-align: center;
+  }
+  .footer{
+    padding-bottom: 35px;
+  }
+  .header .header__content .header__title {
+    font-size: 32px;
+  }
+  .header .header__content .header__subtitle {
+    font-size: 20px;
+    padding-bottom: 56px;
+  }
+}

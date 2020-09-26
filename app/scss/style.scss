@@ -56,6 +56,7 @@ body{
       display: flex;
       justify-content: space-between;
       padding-bottom: 145px;
+      align-items: center;
       .header__logo{
         font-weight: 700;
       }
@@ -183,6 +184,62 @@ body{
   }
 }
 
+//Hamburger styles
+
+.tpl_hamburger svg {height: 40px;width: 60px;}
+.tpl_hamburger svg {cursor: pointer;  height: 50px;  transform: translate3d(0px, 0px, 0px);  width: 80px;}
+svg:not(:root) {overflow: hidden;}
+.tpl_hamburger path.top, .tpl_hamburger path.bottom {
+  stroke-dasharray: 240px, 950px;
+}
+.tpl_hamburger path {
+  fill: none; stroke: #fff; stroke-dashoffset: 0; stroke-linecap: round; stroke-width: 40px;
+  transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25) 0s, stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25) 0s;
+}
+.tpl_hamburger path.middle {stroke-dasharray: 240px, 240px;}
+.tpl_hamburger path {
+  fill: none; stroke: #fff; stroke-dashoffset: 0; stroke-linecap: round; stroke-width: 40px;
+  transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25) 0s, stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25) 0s;
+}
+
+.tpl_hamburger.active path.top, .tpl_hamburger.active path.bottom {
+  stroke-dashoffset: -650px;
+}
+.tpl_hamburger path.top, .tpl_hamburger path.bottom {
+  stroke-dasharray: 240px, 950px;
+}
+.tpl_hamburger.active path.middle {
+  stroke-dasharray: 1px, 220px;
+  stroke-dashoffset: -115px;
+}
+
+.js_menu {
+  display: block;
+}
+.tpl_hamburger{
+  display: none;
+}
+.js_menu.active {
+  display: block;
+}
+
+.header__ul-active{
+  position: absolute;
+  top: 0;
+  flex-direction: column;
+  right: 0;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  background: #000;
+  width: 230px;
+}
+
+.body-block{
+  overflow: hidden;
+}
 
 
 @import "media";
+
+
