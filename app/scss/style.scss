@@ -171,6 +171,7 @@ body{
   .footer__nav{
     display: flex;
     justify-content: space-between;
+    padding-right: 347px;
     .footer__ul{
       .footer__li{
         list-style: none;
@@ -237,6 +238,37 @@ svg:not(:root) {overflow: hidden;}
 
 .body-block{
   overflow: hidden;
+}
+
+//Custom arrows slick-slider
+
+.slick-prev{
+  position: absolute;
+  bottom: 0;
+  z-index: 2;
+  cursor: pointer;
+}
+.slick-next{
+  position: absolute;
+  bottom: 0;
+  left: 40px;
+  cursor: pointer;
+}
+
+//On top button
+
+.ontop-button {
+  position: fixed;
+  bottom: 70px;
+  right: 180px;
+  z-index: 1000;
+  transition: 200ms ease-in-out;
+  cursor: pointer;
+}
+
+.show {
+  transition: 200ms ease-in-out;
+  opacity: 0;
 }
 
 

@@ -31,6 +31,18 @@
     padding-right: 0;
     padding-bottom: 50px;
   }
+  .footer .footer__nav {
+    padding-right: 0;
+  }
+  .ontop-button {
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    bottom: 50px;
+    width: 100%;
+    text-align: center;
+  }
 }
 
 @media (max-width: 850px) {
@@ -68,6 +80,9 @@
   .section__title{
     padding-bottom: 35px;
   }
+  .ontop-button {
+    bottom: 15px;
+  }
 }
 
 @media (max-width: 500px) {
@@ -81,7 +96,7 @@
     padding-left: 10px;
     padding-right: 10px;
   }
-  .skills__img, .portfolio__img, .portfolio__img img {
+  .skills__img {
     width: 80%;
     height: auto;
     text-align: center;
@@ -95,5 +110,8 @@
   .header .header__content .header__subtitle {
     font-size: 20px;
     padding-bottom: 56px;
+  }
+  .ontop-button {
+    bottom: 5px;
   }
 }
