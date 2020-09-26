@@ -6,11 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
   <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="css/style.min.css">
 </head>
-<body>
+<body data-aos="fade-in">
 <a class="ontop-button show" id="#button" ><img src="./img/top.png" alt=""></a>
-  <header class="header">
+  <header id="home" class="header">
     <img class="header__bg" src="./img/city.jpg" alt="">
     <div class="header__content">
       <div class="container">
@@ -18,11 +19,11 @@
           <span class="header__logo">Portfolio</span>
           <div class="js_menu">
             <ul class="header__ul">
-              <li class="header__li"><a href="">Home</a> </li>
-              <li class="header__li"><a href="">About</a> </li>
-              <li class="header__li"><a href="">Skills</a> </li>
-              <li class="header__li"><a href="">Portfolio</a> </li>
-              <li class="header__li"><a href="">Contact</a> </li>
+              <li class="header__li"><a id="homeBtn" href="#">Home</a> </li>
+              <li class="header__li"><a id="aboutBtn" href="">About</a> </li>
+              <li class="header__li"><a id="skillsBtn" href="">Skills</a> </li>
+              <li class="header__li"><a id="portfolioBtn" href="">Portfolio</a> </li>
+              <li class="header__li"><a id="contactBtn" href="">Contact</a> </li>
             </ul>
           </div>
           <div class="tpl_hamburger" id="sandwichmenu">
@@ -33,52 +34,75 @@
             </svg>
           </div>
         </nav>
-        <h1 class="header__title">Hi, It's Andrey Volkov</h1>
+        <h1 class="header__title">Volkov Andrey Valerievich</h1>
         <h2 class="header__subtitle">Junior Frontend Developer</h2>
         <a href="https://github.com/SICKBOYRARI" class="header__link">Latest works</a>
       </div>
     </div>
   </header>
-  <div class="about">
+  <div id="about" class="about">
     <div class="container">
-      <div class="section__title">About</div>
-      <p class="about__content">Lorem ipsum dolor sit amet, Arcu, sed nisi, mi, arcu libero phasellus tincidunt. Rhoncus, diam penatibus aliquet tellus, in rutrum augue. Pellentesque senectus risus consectetur et sed purus sed. Consectetur adipiscing elit. Egestas porttitor nulla nulla egestas odio pharetra egestas aliquet mollis.
+      <div data-aos="fade-up" class="section__title">About</div>
+      <p data-aos="fade-up" class="about__content">
+        <strong>EDUCATION:</strong> Siberian Federal University (SibFU), Bachelor, Department of Applied Mathematics, and Natural Science/ Applied Informatics, Sep 2016 - Jul 2020
         <br>
         <br>
-        Arcu, sed nisi, mi, arcu libero phasellus tincidunt. Rhoncus, diam penatibus aliquet tellus, in rutrum augue. Pellentesque senectus risus consectetur et sed purus sed. Consectetur adipiscing elit. Egestas porttitor nulla nulla egestas odio pharetra egestas aliquet mollis. diam penatibus aliquet tellus, in rutrum augue. Pellentesque.</p>
+        I am working with JS, HTML, CSS starting from the end of 2017.
+        <br>
+        <br>
+        <strong>SEVERAL FACTS ABOUT ME</strong>
+        <br><br>
+        I love programming and everything related to it.   (especially frontend)
+        <br><br>
+        I have teamwork experience.
+        <br><br>
+        I know how to google correctly and read information   about my requests :)
+        <br><br>
+        I am fast learning new technologies.
+        <br><br>
+        I can find the optimal way from difficult   situation by myself in short time period.
+        <br><br>
+        <strong>HOW I LEARNING</strong>
+        <br><br>
+        Books, Video Tutorials, Courses
+        <br><br>
+        <strong>HOBBIES</strong>
+        <br><br>
+        Painting, Football, Basketball, Tennis
+      </p>
     </div>
   </div>
-  <div class="skills">
+  <div id="skills" class="skills">
     <div class="container">
-      <div class="section__title">Skills</div>
+      <div data-aos="fade-up" class="section__title">Skills</div>
       <div class="skills__content">
-        <img src="./img/profile.jpg" alt="" class="skills__img">
-        <div class="skills__profile">
+        <img data-aos="fade-up" src="./img/profile.jpg" alt="" class="skills__img">
+        <div data-aos="fade-up" class="skills__profile">
           <div class="profile__item">
             <div class="profile__title">Profile</div>
             <div class="profile__description">Junior Frontend Developer</div>
           </div>
           <div class="profile__item">
             <div class="profile__title">HTML & CSS</div>
-            <div class="profile__progress">
+            <div data-aos="flip-left" class="profile__progress">
               <div class="progress__percent"></div>
             </div>
           </div>
           <div class="profile__item">
             <div class="profile__title">JavaScript</div>
-            <div class="profile__progress">
+            <div data-aos="flip-left" class="profile__progress">
               <div class="progress__percent"></div>
             </div>
           </div>
           <div class="profile__item">
             <div class="profile__title">React.js</div>
-            <div class="profile__progress">
+            <div data-aos="flip-left" class="profile__progress">
               <div class="progress__percent"></div>
             </div>
           </div>
           <div class="profile__item">
             <div class="profile__title">Firebase</div>
-            <div class="profile__progress">
+            <div data-aos="flip-left" class="profile__progress">
               <div class="progress__percent"></div>
             </div>
           </div>
@@ -90,72 +114,56 @@
       </div>
     </div>
   </div>
-  <div class="portfolio">
+  <div data-aos="fade-up" id="portfolio" class="portfolio">
     <div class="container">
       <div class="section__title">Portfolio</div>
       <div class="slider">
         <div class="portfolio__item">
           <div class="portfolio__subtitle">HTML & CSS</div>
           <div class="portfolio__content">
-            <div class="portfolio__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac dictum nibh nam odio cursus id. Diam massa semper a tincidunt cursus ultricies lectus eget urna.</div>
-            <div class="portfolio__img"><img src="./img/profile.jpg" alt=""> </div>
+            <div class="portfolio__text">
+              Web page layout for customer service.</div>
+            <div class="portfolio__img"><img src="./img/eugen.jpg" alt=""> </div>
           </div>
         </div>
         <div class="portfolio__item">
-          <div class="portfolio__subtitle">HTML & CSS</div>
+          <div class="portfolio__subtitle">JavaScript</div>
           <div class="portfolio__content">
-            <div class="portfolio__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac dictum nibh nam odio cursus id. Diam massa semper a tincidunt cursus ultricies lectus eget urna.</div>
-            <div class="portfolio__img"><img src="./img/profile.jpg" alt=""> </div>
+            <div class="portfolio__text">Dice app for gambling platform.</div>
+            <div class="portfolio__img"><img src="./img/gamblr.jpg" alt=""> </div>
           </div>
         </div>
         <div class="portfolio__item">
-          <div class="portfolio__subtitle">HTML & CSS</div>
+          <div class="portfolio__subtitle">React.js</div>
           <div class="portfolio__content">
-            <div class="portfolio__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac dictum nibh nam odio cursus id. Diam massa semper a tincidunt cursus ultricies lectus eget urna.</div>
-            <div class="portfolio__img"><img src="./img/profile.jpg" alt=""> </div>
-          </div>
-        </div>
-        <div class="portfolio__item">
-          <div class="portfolio__subtitle">HTML & CSS</div>
-          <div class="portfolio__content">
-            <div class="portfolio__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac dictum nibh nam odio cursus id. Diam massa semper a tincidunt cursus ultricies lectus eget urna.</div>
-            <div class="portfolio__img"><img src="./img/profile.jpg" alt=""> </div>
-          </div>
-        </div>
-        <div class="portfolio__item">
-          <div class="portfolio__subtitle">HTML & CSS</div>
-          <div class="portfolio__content">
-            <div class="portfolio__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac dictum nibh nam odio cursus id. Diam massa semper a tincidunt cursus ultricies lectus eget urna.</div>
-            <div class="portfolio__img"><img src="./img/profile.jpg" alt=""> </div>
+            <div class="portfolio__text">Development of an information system
+              for a service for the provision of software and hardware services.</div>
+            <div class="portfolio__img"><img src="./img/help.jpg" alt=""> </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <footer class="footer">
+  <footer id="footer" class="footer">
     <div class="container">
-      <div class="section__title">Get in Touch</div>
+      <div data-aos="fade-up" class="section__title">Get in Touch</div>
       <nav class="footer__nav">
         <ul class="footer__ul">
-          <li class="footer__li"><a href="">GitHub</a></li>
-          <li class="footer__li"><a href="">GitHub</a></li>
-          <li class="footer__li"><a href="">GitHub</a></li>
+          <li data-aos="fade-up" class="footer__li"><a href="https://github.com/SICKBOYRARI">GitHub</a></li>
+          <li data-aos="fade-up" class="footer__li"><a href="https://vk.com/diamondsonmydick">VK</a></li>
+          <li data-aos="fade-up" class="footer__li"><a href="https://t.me/sickboyrari">Telegram</a></li>
+          <li data-aos="fade-up" class="footer__li"><a href="">Discord</a></li>
         </ul>
         <ul class="footer__ul">
-          <li class="footer__li"><a href="">GitHub</a></li>
-          <li class="footer__li"><a href="">GitHub</a></li>
-          <li class="footer__li"><a href="">GitHub</a></li>
-        </ul>
-        <ul class="footer__ul">
-          <li class="footer__li"><a href="">GitHub</a></li>
-          <li class="footer__li"><a href="">GitHub</a></li>
-          <li class="footer__li"><a href="">GitHub</a></li>
+          <li data-aos="fade-up" class="footer__li"><a href="tel:+7 (996) 932 80-13">+7 (996) 932 80-13</a></li>
+          <li data-aos="fade-up" class="footer__li"><a href="mailto:jediz0rrr@gmail.com">jediz0rrr@gmail.com</a></li>
         </ul>
       </nav>
     </div>
   </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script src="js/libs.min.js"></script>
   <script src="js/main.js"></script>
 </body>

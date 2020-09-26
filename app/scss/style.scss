@@ -8,8 +8,6 @@
   padding-bottom: 76px;
 }
 
-//Header section
-
 body{
   font-family: 'Libre Franklin', sans-serif;
   box-sizing: border-box;
@@ -23,6 +21,8 @@ body{
 .container{
   padding: 93px 165px 0 165px;
 }
+
+//Header section
 
 .header{
   .header__bg{
@@ -41,6 +41,7 @@ body{
     margin-right: auto;
     width: 100%;
     font-size: 24px;
+    text-shadow: 3px 5px 2px #474747;
     .header__title{
       font-size: 64px;
       padding-bottom: 26px;
