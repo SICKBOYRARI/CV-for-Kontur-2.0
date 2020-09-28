@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body data-aos="fade-in">
+<a class="ontop-button show" id="#button" ><img src="./img/top.png" alt=""></a>
+  <header id="home" class="header">
+    <img class="header__bg" src="./img/city.jpg" alt="">
+    <div class="header__content">
+      <div class="container">
+        <nav class="header__nav">
+          <span class="header__logo">Portfolio</span>
+          <div class="js_menu">
+            <ul class="header__ul">
+              <li class="header__li"><a id="homeBtn" href="#">Home</a> </li>
+              <li class="header__li"><a id="aboutBtn" href="">About</a> </li>
+              <li class="header__li"><a id="skillsBtn" href="">Skills</a> </li>
+              <li class="header__li"><a id="portfolioBtn" href="">Portfolio</a> </li>
+              <li class="header__li"><a id="contactBtn" href="">Contact</a> </li>
+            </ul>
+          </div>
+          <div class="tpl_hamburger" id="sandwichmenu">
+            <svg viewBox="0 0 800 600">
+              <path d="M300,220 C300,220 520,220 540,220 C740,220 640,540 520,420 C440,340 300,200 300,200" class="top"></path>
+              <path d="M300,320 L540,320" class="middle"></path>
+              <path d="M300,210 C300,210 520,210 540,210 C740,210 640,530 520,410 C440,330 300,190 300,190" class="bottom" transform="translate(480, 320) scale(1, -1) translate(-480, -318) "></path>
+            </svg>
+          </div>
+        </nav>
+        <h1 class="header__title">Volkov Andrey Valerievich</h1>
+        <h2 class="header__subtitle">Junior Frontend Developer</h2>
+        <a href="https://github.com/SICKBOYRARI" class="header__link">Latest works</a>
+      </div>
+    </div>
+  </header>
+  <div id="about" class="about">
+    <div class="container">
+      <div data-aos="fade-up" class="section__title">About</div>
+      <p data-aos="fade-up" class="about__content">
+        <strong>EDUCATION:</strong> Siberian Federal University (SibFU), Bachelor, Department of Applied Mathematics, and Natural Science/ Applied Informatics, Sep 2016 - Jul 2020
+        <br>
+        <br>
+        I am working with JS, HTML, CSS starting from the end of 2017.
+        <br>
+        <br>
+        <strong>SEVERAL FACTS ABOUT ME</strong>
+        <br><br>
+        I love programming and everything related to it.   (especially frontend)
+        <br><br>
+        I have teamwork experience.
+        <br><br>
+        I know how to google correctly and read information   about my requests :)
+        <br><br>
+        I am fast learning new technologies.
+        <br><br>
+        I can find the optimal way from difficult   situation by myself in short time period.
+        <br><br>
+        <strong>HOW I LEARNING</strong>
+        <br><br>
+        Books, Video Tutorials, Courses
+        <br><br>
+        <strong>HOBBIES</strong>
+        <br><br>
+        Painting, Football, Basketball, Tennis
+      </p>
+    </div>
+  </div>
+  <div id="skills" class="skills">
+    <div class="container">
+      <div data-aos="fade-up" class="section__title">Skills</div>
+      <div class="skills__content">
+        <img data-aos="fade-up" src="./img/profile.jpg" alt="" class="skills__img">
+        <div data-aos="fade-up" class="skills__profile">
+          <div class="profile__item">
+            <div class="profile__title">Profile</div>
+            <div class="profile__description">Junior Frontend Developer</div>
+          </div>
+          <div class="profile__item">
+            <div class="profile__title">HTML & CSS</div>
+            <div data-aos="flip-left" class="profile__progress">
+              <div class="progress__percent"></div>
+            </div>
+          </div>
+          <div class="profile__item">
+            <div class="profile__title">JavaScript</div>
+            <div data-aos="flip-left" class="profile__progress">
+              <div class="progress__percent"></div>
+            </div>
+          </div>
+          <div class="profile__item">
+            <div class="profile__title">React.js</div>
+            <div data-aos="flip-left" class="profile__progress">
+              <div class="progress__percent"></div>
+            </div>
+          </div>
+          <div class="profile__item">
+            <div class="profile__title">Firebase</div>
+            <div data-aos="flip-left" class="profile__progress">
+              <div class="progress__percent"></div>
+            </div>
+          </div>
+          <div class="profile__item">
+            <div class="profile__title">Tools</div>
+            <div class="profile__description">Gulp, Webpack, LESS, SASS</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div data-aos="fade-up" id="portfolio" class="portfolio">
+    <div class="container">
+      <div class="section__title">Portfolio</div>
+      <div class="slider">
+        <div class="portfolio__item">
+          <div class="portfolio__subtitle">HTML & CSS</div>
+          <div class="portfolio__content">
+            <div class="portfolio__text">
+              Web page layout for customer service.</div>
+            <div class="portfolio__img"><img src="./img/eugen.jpg" alt=""> </div>
+          </div>
+        </div>
+        <div class="portfolio__item">
+          <div class="portfolio__subtitle">JavaScript</div>
+          <div class="portfolio__content">
+            <div class="portfolio__text">Dice app for gambling platform.</div>
+            <div class="portfolio__img"><img src="./img/gamblr.jpg" alt=""> </div>
+          </div>
+        </div>
+        <div class="portfolio__item">
+          <div class="portfolio__subtitle">React.js</div>
+          <div class="portfolio__content">
+            <div class="portfolio__text">Development of an information system
+              for a service for the provision of software and hardware services.</div>
+            <div class="portfolio__img"><img src="./img/help.jpg" alt=""> </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer id="footer" class="footer">
+    <div class="container">
+      <div data-aos="fade-up" class="section__title">Get in Touch</div>
+      <nav class="footer__nav">
+        <ul class="footer__ul">
+          <li data-aos="fade-up" class="footer__li"><a href="https://github.com/SICKBOYRARI">GitHub</a></li>
+          <li data-aos="fade-up" class="footer__li"><a href="https://vk.com/diamondsonmydick">VK</a></li>
+          <li data-aos="fade-up" class="footer__li"><a href="https://t.me/sickboyrari">Telegram</a></li>
+          <li data-aos="fade-up" class="footer__li"><a href="">Discord</a></li>
+        </ul>
+        <ul class="footer__ul">
+          <li data-aos="fade-up" class="footer__li"><a href="tel:+7 (996) 932 80-13">+7 (996) 932 80-13</a></li>
+          <li data-aos="fade-up" class="footer__li"><a href="mailto:jediz0rrr@gmail.com">jediz0rrr@gmail.com</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="js/libs.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
