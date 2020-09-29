@@ -225,8 +225,14 @@ svg:not(:root) {overflow: hidden;}
   display: block;
 }
 
+.tpl_hamburger.active{
+  position: fixed;
+  z-index: 6;
+  right: 75px;
+}
+
 .header__ul-active{
-  position: absolute;
+  position: fixed;
   top: 0;
   flex-direction: column;
   right: 0;
@@ -235,6 +241,7 @@ svg:not(:root) {overflow: hidden;}
   align-items: center;
   background: #000;
   width: 230px;
+  z-index: 5;
 }
 
 .body-block{
